@@ -1,0 +1,336 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Gaming Laptop Pro 15",
+    "product_image": "https://example.com/images/gaming_laptop_pro_15.jpg",
+    "category": "Computers",
+    "price": 1500,
+    "description": "High-performance gaming laptop with advanced cooling and powerful GPU.",
+    "specification": [
+      "Intel i7 10th Gen",
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA GTX 1660 Ti"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "TechGear"
+  },
+  {
+    "product_id": 2,
+    "product_title": "UltraBook Slim 14",
+    "product_image": "https://example.com/images/ultrabook_slim_14.jpg",
+    "category": "Computers",
+    "price": 1200,
+    "description": "Lightweight laptop with excellent battery life and sleek design.",
+    "specification": [
+      "Intel i5 11th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "Integrated graphics"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "TechGear"
+  },
+  {
+    "product_id": 3,
+    "product_title": "Portable Office Desktop",
+    "product_image": "https://example.com/images/portable_office_desktop.jpg",
+    "category": "Computers",
+    "price": 900,
+    "description": "Compact desktop with high performance, ideal for office use.",
+    "specification": [
+      "Intel i5 9th Gen",
+      "8GB RAM",
+      "1TB HDD",
+      "Integrated graphics"
+    ],
+    "availability": false,
+    "rating": 4.3,
+    "brand": "WorkMaster"
+  },
+  {
+    "product_id": 4,
+    "product_title": "All-in-One Computer",
+    "product_image": "https://example.com/images/all_in_one_computer.jpg",
+    "category": "Computers",
+    "price": 750,
+    "description": "Space-saving all-in-one desktop with large display.",
+    "specification": [
+      "Intel i3 10th Gen",
+      "8GB RAM",
+      "512GB SSD",
+      "Integrated graphics"
+    ],
+    "availability": true,
+    "rating": 4.0,
+    "brand": "TechZone"
+  },
+  {
+    "product_id": 5,
+    "product_title": "Professional Laptop",
+    "product_image": "https://example.com/images/professional_laptop.jpg",
+    "category": "Computers",
+    "price": 1350,
+    "description": "Professional-grade laptop with excellent processing power and storage.",
+    "specification": [
+      "Intel i7 11th Gen",
+      "16GB RAM",
+      "1TB SSD",
+      "NVIDIA Quadro"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "OfficePro"
+  },
+  {
+    "product_id": 6,
+    "product_title": "Convertible 2-in-1 Laptop",
+    "product_image": "https://example.com/images/convertible_2in1_laptop.jpg",
+    "category": "Computers",
+    "price": 950,
+    "description": "Versatile 2-in-1 laptop with touchscreen and stylus support.",
+    "specification": [
+      "AMD Ryzen 5",
+      "8GB RAM",
+      "512GB SSD",
+      "Radeon Graphics"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "FlexiBook"
+  },
+  {
+    "product_id": 7,
+    "product_title": "Smartphone Elite 5G",
+    "product_image": "https://example.com/images/smartphone_elite_5g.jpg",
+    "category": "Phones",
+    "price": 850,
+    "description": "High-end smartphone with stunning display and fast performance.",
+    "specification": [
+      "6.5-inch AMOLED",
+      "128GB Storage",
+      "48MP Camera",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "CellX"
+  },
+  {
+    "product_id": 8,
+    "product_title": "Smartphone Lite 4G",
+    "product_image": "https://example.com/images/smartphone_lite_4g.jpg",
+    "category": "Phones",
+    "price": 300,
+    "description": "Affordable smartphone with all the essentials.",
+    "specification": [
+      "6.1-inch LCD",
+      "64GB Storage",
+      "13MP Camera",
+      "4000mAh battery"
+    ],
+    "availability": false,
+    "rating": 4.1,
+    "brand": "CellX"
+  },
+  {
+    "product_id": 9,
+    "product_title": "Smartphone Max Pro 5G",
+    "product_image": "https://example.com/images/smartphone_max_pro_5g.jpg",
+    "category": "Phones",
+    "price": 950,
+    "description": "Flagship smartphone with the latest features and long battery life.",
+    "specification": [
+      "6.7-inch OLED",
+      "256GB Storage",
+      "64MP Camera",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "SmartEdge"
+  },
+  {
+    "product_id": 10,
+    "product_title": "Smart Watch Series X",
+    "product_image": "https://example.com/images/smart_watch_series_x.jpg",
+    "category": "Smart Watches",
+    "price": 250,
+    "description": "Advanced smartwatch with health tracking and GPS.",
+    "specification": [
+      "1.4-inch OLED",
+      "Heart Rate Monitor",
+      "GPS",
+      "7-day battery life"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "WristTech"
+  },
+  {
+    "product_id": 11,
+    "product_title": "Fitness Tracker Pro",
+    "product_image": "https://example.com/images/fitness_tracker_pro.jpg",
+    "category": "Smart Watches",
+    "price": 120,
+    "description": "Affordable fitness tracker with step counting and sleep tracking.",
+    "specification": [
+      "0.95-inch OLED",
+      "Step Counter",
+      "Sleep Tracking",
+      "10-day battery life"
+    ],
+    "availability": true,
+    "rating": 4.1,
+    "brand": "FitMax"
+  },
+  {
+    "product_id": 12,
+    "product_title": "Wireless Charger Pad",
+    "product_image": "https://example.com/images/wireless_charger_pad.jpg",
+    "category": "Chargers",
+    "price": 70,
+    "description": "Fast wireless charger compatible with all Qi-enabled devices.",
+    "specification": [
+      "15W output",
+      "Anti-slip surface",
+      "USB-C input"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "PowerPlus"
+  },
+  {
+    "product_id": 13,
+    "product_title": "Fast Charging Wall Adapter",
+    "product_image": "https://example.com/images/fast_charging_wall_adapter.jpg",
+    "category": "Chargers",
+    "price": 60,
+    "description": "Compact wall adapter with high-speed charging capabilities.",
+    "specification": [
+      "18W output",
+      "Dual USB ports",
+      "Foldable plug"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "PowerPlus"
+  },
+  {
+    "product_id": 14,
+    "product_title": "Ultra Slim Power Bank 10000mAh",
+    "product_image": "https://example.com/images/ultra_slim_power_bank.jpg",
+    "category": "Power Banks",
+    "price": 55,
+    "description": "Portable power bank with 10,000mAh capacity and fast charging.",
+    "specification": [
+      "10000mAh",
+      "USB-C and USB-A ports",
+      "Slim design"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "ChargeGo"
+  },
+  {
+    "product_id": 15,
+    "product_title": "High Capacity Power Bank 20000mAh",
+    "product_image": "https://example.com/images/high_capacity_power_bank.jpg",
+    "category": "Power Banks",
+    "price": 80,
+    "description": "High-capacity power bank with dual charging ports and LED indicator.",
+    "specification": [
+      "20000mAh",
+      "Dual USB-A ports",
+      "LED battery indicator"
+    ],
+    "availability": false,
+    "rating": 4.6,
+    "brand": "ChargeGo"
+  },
+  {
+    "product_id": 16,
+    "product_title": "Premium Laptop Charger",
+    "product_image": "https://example.com/images/premium_laptop_charger.jpg",
+    "category": "Chargers",
+    "price": 90,
+    "description": "Universal laptop charger with multiple voltage settings.",
+    "specification": [
+      "65W output",
+      "Interchangeable tips",
+      "Overheat protection"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "PowerPlus"
+  },
+  {
+    "product_id": 17,
+    "product_title": "Compact Portable Charger",
+    "product_image": "https://example.com/images/compact_portable_charger.jpg",
+    "category": "Chargers",
+    "price": 65,
+    "description": "Compact portable charger for on-the-go charging.",
+    "specification": [
+      "10W output",
+      "USB-C input",
+      "Pocket-sized"
+    ],
+    "availability": false,
+    "rating": 4.2,
+    "brand": "PowerQuick"
+  },
+  {
+    "product_id": 18,
+    "product_title": "Smartphone Budget 4G",
+    "product_image": "https://example.com/images/smartphone_budget_4g.jpg",
+    "category": "Phones",
+    "price": 150,
+    "description": "Entry-level smartphone with all essential features.",
+    "specification": [
+      "5.8-inch LCD",
+      "32GB Storage",
+      "8MP Camera",
+      "3000mAh battery"
+    ],
+    "availability": true,
+    "rating": 3.9,
+    "brand": "EconoCell"
+  },
+  {
+    "product_id": 19,
+    "product_title": "Smart Fitness Band",
+    "product_image": "https://example.com/images/smart_fitness_band.jpg",
+    "category": "Smart Watches",
+    "price": 100,
+    "description": "Wearable fitness band with heart rate monitor and step counter.",
+    "specification": [
+      "0.8-inch OLED",
+      "Heart Rate Monitor",
+      "Step Counter",
+      "14-day battery life"
+    ],
+    "availability": true,
+    "rating": 4.0,
+    "brand": "FitPulse"
+  },
+  {
+    "product_id": 20,
+    "product_title": "Premium Gaming Phone",
+    "product_image": "https://example.com/images/premium_gaming_phone.jpg",
+    "category": "Phones",
+    "price": 950,
+    "description": "Top-of-the-line gaming phone with high refresh rate and advanced cooling.",
+    "specification": [
+      "6.8-inch AMOLED",
+      "256GB Storage",
+      "64MP Camera",
+      "6000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "GamePro"
+  }
+]
