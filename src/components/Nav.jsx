@@ -3,10 +3,13 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 
 export default function Nav() {
+    
     const {pathname} = useLocation()
-   const navStyle = `${pathname === '/'? 'bg-Lavender  pt-5 rounded-t-[32px]':'bg-white'}`;
-   const navLink = `${pathname === '/'? 'text-white':'text-Gray text-opacity-[0.7]'}`
-   const logo = `${pathname === '/'? 'text-white':'text-Gray'}`
+   const navStyle = `${pathname === '/' || pathname.startsWith('/category/') ? 'bg-Lavender pt-5 rounded-t-[32px]' : 'bg-LightGray py-2'}`;
+
+
+   const navLink = `${pathname === '/' || pathname.startsWith('/category/') ? 'text-white':'text-Gray text-opacity-[0.7]'}`
+   const logo = `${pathname === '/'  || pathname.startsWith('/category/')?  'text-white':'text-Gray'}`
     const navItems = <>
     <NavLink to="/" className={navLink}>Home</NavLink>
     <NavLink className={navLink}>Statistics</NavLink>
