@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation} from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
 import React, { createContext,useContext } from "react";
 
 const ActiveSectionContext = createContext();
@@ -21,7 +21,7 @@ export const ActiveSectionProvider = ({ children }) => {
 export default function Banner() {
  const { activeSection, setActiveSection } = useActiveSection()
     const {pathname} = useLocation();
-    
+ 
    const bgBanner = `${pathname === '/' || pathname.startsWith('/category/')? 'pb-52 rounded-b-[32px]':'pb-10 rounded-b-[0px]'}`
    const heading = `${pathname === '/' || pathname.startsWith('/category/')?'text-5xl leading-[72px]':'text-3xl mt-3'}`
    const bgBannerTwo = `${pathname.startsWith('/productDetails/')&& 'pb-52'}`
@@ -29,7 +29,7 @@ export default function Banner() {
    const activeBtn = (id)=>{
      setActive(id)
    }
-   
+  
    let title;
    let btn;
    if(pathname ==='/' || pathname.startsWith('/category/')){
@@ -42,7 +42,7 @@ export default function Banner() {
     );
     btn = (
       <>
-      <button className="text-lg font-bold text-Lavender bg-white py-2.5 px-5 rounded-full hover:text-white hover:bg-Lavender border-[2px] border-white">Shop Now</button>
+      <button  className="text-lg font-bold text-Lavender bg-white py-2.5 px-5 rounded-full hover:text-white hover:bg-Lavender border-[2px] border-white">Shop Now</button>
       </>
     )
     
