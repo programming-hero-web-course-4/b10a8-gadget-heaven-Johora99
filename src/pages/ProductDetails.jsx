@@ -4,9 +4,8 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { addSelectedProducts, getSelectedProducts,addHeartProducts,getHeartProducts, addPrice } from "../localStor";
 
-
+// context API ============================
  const ContextId = createContext();
-
     const ContextIdProvider = ({children})=>{
     const [num,setNum] = useState(0);
     const[heartCount,setHeartCount] = useState(0)
@@ -30,7 +29,7 @@ export default function ProductDetails() {
     
 
   },[])
-  const {product_id,product_title,product_image,category,price,description,specification,availability,rating,brand} = details;
+  const {product_title,product_image,price,description,specification,rating} = details;
 
 
     const handleAddToCard = (id)=>{

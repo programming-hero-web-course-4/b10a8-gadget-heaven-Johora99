@@ -16,40 +16,40 @@ const router = createBrowserRouter([
     errorElement:<ErrorPage></ErrorPage>,
     children:[{
         path:"/",
-        loader:()=> fetch ('../../public/categories.json'),
+        loader:()=> fetch ('/categories.json'),
         element:<Home></Home>,
         children:[
           {
            path:"/",
-          loader:()=> fetch('../../public/alldata.json'),
+          loader:()=> fetch('/alldata.json'),
            element:<Cards></Cards>
           },
           {
           path:"/category/:categoryId",
-          loader:()=> fetch('../../public/alldata.json'),
+          loader:()=> fetch('/alldata.json'),
           element:<Cards></Cards>,  
         },
       ]
     },
     {
       path:"/productDetails/:id",
-       loader:()=> fetch('../../public/alldata.json'),
+       loader:()=> fetch('/alldata.json'),
       element:<ProductDetails></ProductDetails>
 
     },
     {
         path:"/dashBoard",
-        loader:()=> fetch('../../public/alldata.json'),
+        loader:()=> fetch('/alldata.json'),
         element:<DashBoard></DashBoard>,
         children:[
           {
             path:"cart",
-             loader:()=> fetch('../../public/alldata.json'),
+             loader:()=> fetch('/public/alldata.json'),
             element:<Cart></Cart>
           },
           {
             path:"watchList",
-             loader:()=> fetch('../../public/alldata.json'),
+             loader:()=> fetch('/public/alldata.json'),
             element:<WatchList></WatchList>
           },
         ]

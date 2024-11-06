@@ -1,10 +1,13 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
 import { getSelectedProducts } from "../localStor";
 import AddProduct from "../components/AddProduct";
 import Modal from "./Modal";
 import { useNavigate } from "react-router-dom";
+import { ContextId } from "../pages/ProductDetails";
 
 export default function Cart() {
+    const {num,setNum,heartCount,setHeartCount} = useContext(ContextId);
+
     const [addItems, setAddItems] = useState([]);
     const [active, setActive] = useState(null);
     const [totalPrices, setTotalPrices] = useState(0);
@@ -22,7 +25,7 @@ export default function Cart() {
 
      useEffect(() => {
        
-        const prices = addItems.map((price) => price.price);
+      const prices = Array.isArray(addItems) ? addItems.map((item) => item.price) : [];
         const totalPrice = prices.reduce((acc, price) => acc + price, 0);
         setTotalPrices(totalPrice); 
         
@@ -35,7 +38,9 @@ export default function Cart() {
 
     const showModal = () => {
         modalRef.current.showModal();
-        setAddItems([]);
+        setAddItems(0);
+        setNum(0);
+        setHeartCount(0);
     };
 
     const closeModal = () => {
@@ -71,11 +76,16 @@ export default function Cart() {
                     </div>
                 </div>
             </div>
-            <div>
-                {addItems.map((item) => (
-                    <AddProduct item={item} key={item.id}></AddProduct>
-                ))}
-            </div>
+           <div>
+  {Array.isArray(addItems) && addItems.length > 0 ? (
+    addItems.map((item) => (
+      <AddProduct item={item} key={item.id} />
+    ))
+  ) : (
+    <p>No items available</p>
+  )}
+</div>
+
 
         
             <Modal closeModal={closeModal} ref={modalRef} modalPrice={modalPrice} />

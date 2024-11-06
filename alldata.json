@@ -1,0 +1,354 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Sony WH-1000XM4",
+    "product_image": "https://i.ibb.co.com/7zMbzX7/wh1.webp",
+    "category": "Headphones",
+    "price": 300,
+    "description": "Over-ear headphones with active noise cancellation and premium sound quality.",
+    "specification": [
+      "Bluetooth 5.0",
+      "Active noise cancellation",
+      "30-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Sony"
+  },
+  {
+    "product_id": 2,
+    "product_title": "Xiaomi Redmi Note 10",
+    "product_image": "https://i.ibb.co.com/b7wbN6z/2090-78694.jpg",
+    "category": "Phones",
+    "price": 300,
+    "description": "Affordable smartphone with essential features.",
+    "specification": [
+      "6.43-inch AMOLED",
+      "64GB Storage",
+      "48MP Camera",
+      "5000mAh battery"
+    ],
+    "availability": false,
+    "rating": 4.1,
+    "brand": "Xiaomi"
+  },
+  {
+    "product_id": 3,
+    "product_title": "Lenovo ThinkCentre M720q",
+    "product_image": "https://i.ibb.co.com/ZHB2dmZ/Lenovo-Think-Centre-M720q-Front-Bottom-with-20-Monitor-2048x2048.webp",
+    "category": "Computers",
+    "price": 900,
+    "description": "Compact desktop with high performance, ideal for office use.",
+    "specification": [
+      "Intel i5 9th Gen",
+      "8GB RAM",
+      "1TB HDD",
+      "Integrated graphics"
+    ],
+    "availability": false,
+    "rating": 4.3,
+    "brand": "Lenovo"
+  },
+  {
+    "product_id": 4,
+    "product_title": "Bose SoundLink Micro",
+    "product_image": "https://i.ibb.co.com/98ZvFMC/1920-JPG-SLMC-CC-033-CMYK.jpg",
+    "category": "Speakers",
+    "price": 80,
+    "description": "Compact Bluetooth speaker with powerful sound in a small size.",
+    "specification": [
+      "Bluetooth 5.0",
+      "Compact design",
+      "8-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "brand": "Bose"
+  },
+  {
+    "product_id": 5,
+    "product_title": "Microsoft Surface Pro 7",
+    "product_image": "https://i.ibb.co.com/qkKrnth/microsoft-surface-pro-7-core-i5-laptop-4-600x500h-jpg.webp",
+    "category": "Computers",
+    "price": 950,
+    "description": "Versatile 2-in-1 laptop with touchscreen and stylus support.",
+    "specification": [
+      "Intel i5 10th Gen",
+      "8GB RAM",
+      "128GB SSD",
+      "Intel Iris Plus Graphics"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Microsoft Surface"
+  },
+  {
+    "product_id": 6,
+    "product_title": "Anker PowerCore Slim 10000",
+    "product_image": "https://i.ibb.co.com/b7TpVKh/Power-Core-Slim-10000-PD.jpg",
+    "category": "Power Banks",
+    "price": 55,
+    "description": "Portable power bank with 10,000mAh capacity and fast charging.",
+    "specification": [
+      "10000mAh",
+      "USB-C and USB-A ports",
+      "Slim design"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "Anker"
+  },
+  {
+    "product_id": 7,
+    "product_title": "Apple MacBook Pro 14",
+    "product_image": "https://i.ibb.co.com/SXYdtZj/3710-49683.jpg",
+    "category": "Computers",
+    "price": 1350,
+    "description": "Professional-grade laptop with powerful processing and storage.",
+    "specification": [
+      "M1 Pro chip",
+      "16GB RAM",
+      "512GB SSD",
+      "Retina Display"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Apple"
+  },
+  {
+    "product_id": 8,
+    "product_title": "Apple Watch Series 6",
+    "product_image": "https://i.ibb.co.com/jyJ785P/Apple-watch-series-6-stainless-steel-case-gmt-watchface-09152020-carousel-jpg-large.jpg",
+    "category": "Smart Watches",
+    "price": 250,
+    "description": "Advanced smartwatch with health tracking and GPS.",
+    "specification": [
+      "1.4-inch OLED",
+      "Heart Rate Monitor",
+      "GPS",
+      "18-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "Apple"
+  },
+  {
+    "product_id": 9,
+    "product_title": "OnePlus 9 Pro",
+    "product_image": "https://i.ibb.co.com/XtcFVdJ/oneplus-9-pro-2.jpg",
+    "category": "Phones",
+    "price": 950,
+    "description": "Flagship smartphone with cutting-edge features and long battery life.",
+    "specification": [
+      "6.7-inch AMOLED",
+      "256GB Storage",
+      "48MP Camera",
+      "4500mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "OnePlus"
+  },
+  {
+    "product_id": 10,
+    "product_title": "Dell 65W Universal Charger",
+    "product_image": "https://i.ibb.co.com/4MkFW3d/71st-Z6o-OIVL-AC-SL1500-removebg-preview.png",
+    "category": "Chargers",
+    "price": 90,
+    "description": "Universal laptop charger with multiple voltage settings.",
+    "specification": [
+      "65W output",
+      "Multiple voltage settings",
+      "Interchangeable tips"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "Dell"
+  },
+  {
+    "product_id": 11,
+    "product_title": "Samsung Galaxy Buds Pro",
+    "product_image": "https://i.ibb.co.com/2yxVt5y/Galaxy-Buds-Pro-PR-main1.jpg",
+    "category": "Headphones",
+    "price": 200,
+    "description": "Compact true wireless earbuds with superior sound and ANC.",
+    "specification": [
+      "Bluetooth 5.2",
+      "Active noise cancellation",
+      "5-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Samsung"
+  },
+  {
+    "product_id": 12,
+    "product_title": "Fitbit Charge 5",
+    "product_image": "https://i.ibb.co.com/gd84zhp/Fitbit-Charge-5-Fitness-Tracker-Steel-Blue-and-Platinum-Stainless-Steel-ba5585d3-b08c-42bb-b457-4cb1.webp",
+    "category": "Smart Watches",
+    "price": 120,
+    "description": "Affordable fitness tracker with step counting and sleep tracking.",
+    "specification": [
+      "0.95-inch OLED",
+      "Step Counter",
+      "Sleep Tracking",
+      "7-day battery life"
+    ],
+    "availability": true,
+    "rating": 4.1,
+    "brand": "Fitbit"
+  },
+  {
+    "product_id": 13,
+    "product_title": "Dell G15 Gaming Laptop",
+    "product_image": "https://i.ibb.co.com/s95H2Sh/Dell-G15-5520-600x450.webp",
+    "category": "Computers",
+    "price": 1500,
+    "description": "High-performance gaming laptop with advanced cooling and powerful GPU.",
+    "specification": [
+      "Intel i7 10th Gen",
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA GTX 1660 Ti"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Dell"
+  },
+  {
+    "product_id": 14,
+    "product_title": "JBL Flip 5",
+    "product_image": "https://i.ibb.co.com/9vgQZYN/JBL-Flip-5-Eco-Edition-600x600.jpg",
+    "category": "Speakers",
+    "price": 150,
+    "description": "Water-resistant Bluetooth speaker with rich sound and bass.",
+    "specification": [
+      "Bluetooth 5.1",
+      "IPX7 water resistance",
+      "12-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "JBL"
+  },
+  {
+    "product_id": 15,
+    "product_title": "ASUS Vivo AiO V222",
+    "product_image": "https://i.ibb.co.com/RywwXs1/Asus-Vivo-Ai-O-V222-V222-FAK-BA121-D-1-1.webp",
+    "category": "Computers",
+    "price": 750,
+    "description": "Space-saving all-in-one desktop with a large display.",
+    "specification": [
+      "Intel i3 10th Gen",
+      "8GB RAM",
+      "512GB SSD",
+      "Integrated graphics"
+    ],
+    "availability": true,
+    "rating": 4.0,
+    "brand": "ASUS"
+  },
+  {
+    "product_id": 16,
+    "product_title": "Samsung Galaxy S21",
+    "product_image": "https://i.ibb.co.com/zXbWYnW/Samsung-S21-FE.webp",
+    "category": "Phones",
+    "price": 850,
+    "description": "High-end smartphone with a stunning display and fast performance.",
+    "specification": [
+      "6.2-inch Dynamic AMOLED",
+      "128GB Storage",
+      "48MP Camera",
+      "4500mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "Samsung"
+  },
+  {
+    "product_id": 16,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/dBfFbx4/unnamed.jpg",
+    "category": "Computers",
+    "price": 999,
+    "description": "Sleek and powerful laptop with an InfinityEdge display.",
+    "specification": [
+      "Intel i7 11th Gen",
+      "16GB RAM",
+      "1TB SSD",
+      "Intel Iris Xe Graphics"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Dell"
+},
+
+
+  {
+    "product_id": 18,
+    "product_title": "Garmin Venu Sq",
+    "product_image": "https://i.ibb.co.com/2YBg6xQ/cf-lg-6cd7a694-4e06-4be4-ba45-33b320058ced.webp",
+    "category": "Smart Watches",
+    "price": 230,
+    "description": "Advanced smartwatch designed for fitness enthusiasts.",
+    "specification": [
+      "1.5-inch AMOLED",
+      "Heart Rate Monitor",
+      "GPS",
+      "5-day battery life"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Garmin"
+  },
+  {
+    "product_id": 19,
+    "product_title": "Samsung 5000mAh Compact",
+    "product_image": "https://i.ibb.co.com/9tpfcf6/Baseus-20-W-Compact-5000m-Ah-Power-Bank-Type-C-Edition-For-Iphone-15-Series-Samsung-Pixel-Huawei-1.jpg",
+    "category": "Power Banks",
+    "price": 30,
+    "description": "Compact power bank for emergency charging on-the-go.",
+    "specification": [
+      "5000mAh",
+      "USB-C",
+      "Lightweight design"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "brand": "Samsung"
+  },
+  {
+    "product_id": 20,
+    "product_title": "Samsung Galaxy Z Fold 4",
+    "product_image": "https://i.ibb.co.com/jVn2x8H/Galaxy-Z-Fold-4.jpg",
+    "category": "Phones",
+    "price": 1200,
+    "description": "Innovative foldable tablet for enhanced portability and multitasking.",
+    "specification": [
+      "12.3-inch OLED",
+      "256GB Storage",
+      "Stylus support",
+      "Foldable design"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Samsung"
+  },
+  {
+  "product_id": 21,
+  "product_title": "HP 45W Laptop Charger",
+  "product_image": "https://i.ibb.co.com/drHSyVf/c08704493.webp",
+  "category": "Chargers",
+  "price": 50,
+  "description": "Compact and reliable charger for HP laptops.",
+  "specification": [
+    "45W output",
+    "Compatible with HP laptops",
+    "Over-voltage protection"
+  ],
+  "availability": true,
+  "rating": 4.5,
+  "brand": "HP"
+}
+
+]

@@ -1,7 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom"
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
-import { addSelectedProducts } from "../localStor";
 import { useContext, useState } from "react";
 import { ContextId } from "../pages/ProductDetails";
 

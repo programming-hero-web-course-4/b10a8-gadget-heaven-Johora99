@@ -2,15 +2,13 @@ import { useState } from "react";
 import { Link, useLocation} from "react-router-dom";
 import React, { createContext,useContext } from "react";
 
+// context API ==================
 const ActiveSectionContext = createContext();
-
 export const useActiveSection = () => {
   return useContext(ActiveSectionContext);
 };
-
 export const ActiveSectionProvider = ({ children }) => {
   const [activeSection, setActiveSection] = useState("cart");
-
   return (
     <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
       {children}
@@ -25,11 +23,20 @@ export default function Banner() {
    const bgBanner = `${pathname === '/' || pathname.startsWith('/category/')? 'pb-52 rounded-b-[32px]':'pb-10 rounded-b-[0px]'}`
    const heading = `${pathname === '/' || pathname.startsWith('/category/')?'text-5xl leading-[72px]':'text-3xl mt-3'}`
    const bgBannerTwo = `${pathname.startsWith('/productDetails/')&& 'pb-52'}`
-   const [active,setActive] = useState(null);
+   const [active,setActive] = useState(1);
    const activeBtn = (id)=>{
      setActive(id)
    }
-  
+  const scrollToCards = () => {
+    // Get the card section element
+    const cardSection = document.getElementById('card-section');
+    if (cardSection) {
+      cardSection.scrollIntoView({
+        behavior: 'smooth', // Smooth scroll
+        block: 'start', // Scroll to the top of the section
+      });
+    }
+  };
    let title;
    let btn;
    if(pathname ==='/' || pathname.startsWith('/category/')){
@@ -42,7 +49,7 @@ export default function Banner() {
     );
     btn = (
       <>
-      <button  className="text-lg font-bold text-Lavender bg-white py-2.5 px-5 rounded-full hover:text-white hover:bg-Lavender border-[2px] border-white">Shop Now</button>
+      <button onClick={scrollToCards} className="text-lg font-bold text-Lavender bg-white py-2.5 px-5 rounded-full hover:text-white hover:bg-Lavender border-[2px] border-white">Shop Now</button>
       </>
     )
     
@@ -82,28 +89,8 @@ export default function Banner() {
     btn = (
       <>
       <div className="flex items-center gap-5 justify-center">
-     <button onClick={() => {
-            activeBtn(1);
-            setActiveSection("cart");
-          }}
-          className={`text-lg font-bold border-[2px] border-white py-2.5 px-10 rounded-full ${
-            active === 1 ? "bg-white text-Lavender" : "bg-Lavender text-white"
-          }`}
-        >
-          Cart
-        </button>
-    
-       <button
-          onClick={() => {
-            activeBtn(2);
-            setActiveSection("watchlist");
-          }}
-          className={`text-lg font-bold border-[2px] border-white py-2.5 px-10 rounded-full ${
-            active === 2 ? "bg-white text-Lavender" : "bg-Lavender text-white"
-          }`}
-        >
-          Wishlist
-        </button>
+     <button onClick={() => {activeBtn(1);setActiveSection("cart");}}className={`text-lg font-bold border-[2px] border-white py-2.5 px-10 rounded-full ${active === 1 ? "bg-white text-Lavender" : "bg-Lavender text-white"}`}>Cart</button>
+      <button onClick={() => {activeBtn(2);setActiveSection("watchlist");}}className={`text-lg font-bold border-[2px] border-white py-2.5 px-10 rounded-full ${active === 2 ? "bg-white text-Lavender" : "bg-Lavender text-white"}`}> Wishlist</button>
       </div>
       </>
     )
