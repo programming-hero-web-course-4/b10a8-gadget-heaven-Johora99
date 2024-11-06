@@ -1,21 +1,36 @@
 import { NavLink, useLocation } from "react-router-dom"
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
+import { addSelectedProducts } from "../localStor";
+import { useContext, useState } from "react";
+import { ContextId } from "../pages/ProductDetails";
 
 export default function Nav() {
-    
+  const {num,setNum,heartCount} = useContext(ContextId)
     const {pathname} = useLocation()
    const navStyle = `${pathname === '/' || pathname.startsWith('/category/') ? 'bg-Lavender pt-5 rounded-t-[32px]' : 'bg-LightGray py-2'}`;
 
 
    const navLink = `${pathname === '/' || pathname.startsWith('/category/') ? 'text-white':'text-Gray text-opacity-[0.7]'}`
    const logo = `${pathname === '/'  || pathname.startsWith('/category/')?  'text-white':'text-Gray'}`
+   const addBtn =`${pathname === '/'  || pathname.startsWith('/category/')? 'bg-white':'bg-Lavender'}`
+   const addText = `${pathname === '/'  || pathname.startsWith('/category/')?'text-Lavender':'text-white'}`
     const navItems = <>
-    <NavLink to="/" className={navLink}>Home</NavLink>
-    <NavLink className={navLink}>Statistics</NavLink>
-    <NavLink to="/dashBoard" className={navLink}>Dashboard</NavLink>
-
+    <NavLink 
+        to="/" 
+        className={({ isActive }) => `${navLink} ${isActive ? 'underline' : ''}`}
+      >
+        Home
+      </NavLink>
+    <NavLink to="/statistic" className={({ isActive }) => `${navLink} ${isActive ? 'text-Lavender' : ''}`}>Statistics</NavLink>
+    <NavLink to="/dashBoard" className={({ isActive }) => `${navLink} ${isActive ? 'text-Lavender' : ''}`}>Dashboard</NavLink>
+    <NavLink to="/clientTestimonial" className={({ isActive }) => `${navLink} ${isActive ? 'text-Lavender' : ''}`}>Client Testimonial</NavLink>
+      
     </>
+   
+   
+   
+   
   return (
     <div className={`mx-auto sora  ${navStyle}`}>
         <div className="navbar container mx-auto">
@@ -51,9 +66,17 @@ export default function Nav() {
   <div className="navbar-end gap-3">
     <div className="w-10 h-10 bg-white rounded-full border-[1px] border-Gray border-opacity-[0.1] relative">
     <MdOutlineShoppingCart className="text-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+    <div className={`w-6 h-6 rounded-full absolute -top-3 left-2/3 ${addBtn}`}>
+     <span className= {`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm ${addText}`}>{num}</span>
+
+    </div>
     </div>
     <div className="w-10 h-10 bg-white rounded-full border-[1px] border-Gray border-opacity-[0.1] relative">
    <FaRegHeart  className="text-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+    <div className={`w-6 h-6 bg-Lavender rounded-full absolute -top-3 left-2/3 ${addBtn}`}>
+     <span className= {`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm ${addText}`}>{heartCount}</span>
+
+    </div>
     </div>
   </div>
 </div>

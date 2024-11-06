@@ -1,25 +1,21 @@
-import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom"
-import { getSelectedProducts } from "../localStor";
 
+import { useActiveSection } from "../components/Banner";
+import WatchList from "../components/WatchList";
+import Cart from "../components/Cart";
+import { useEffect } from "react";
 export default function DashBoard() {
-  const {id} = useParams();
-  const [addItems,setAddItems]=useState([]);
-  useEffect(()=>{
-    const allData = getSelectedProducts();
-    setAddItems(allData);
-  },[])
-   
+   const { activeSection, setActiveSection } = useActiveSection()
+    useEffect(() => {
+    document.title = "DashBoard";
+  }, []);
   return (
-    <div className="container w-11/12 mx-auto">
-      <div className="flex items-center justify-between">
-        <h3>Cart</h3>
-        <div className="flex items-center">
-          <h3>Total cost:</h3>
-          <button>Sort by Price</button>
-          <button>Purchase</button>
-        </div>
+    <div>
+       <div>
+        {activeSection === "cart" && <Cart></Cart>}
+        {activeSection === "watchlist" &&  <WatchList></WatchList> }
       </div>
     </div>
+
   )
 }
+

@@ -1,0 +1,34 @@
+[
+  {
+    "client_id": 1,
+    "client_name": "John Doe",
+    "client_image": "https://i.ibb.co.com/PgYzLwG/Image-1.png",
+    "customer_status": "Regular",
+    "product_feedback": "The product quality is amazing and the performance exceeded my expectations!",
+    "rating": 4.5
+  },
+  {
+    "client_id": 2,
+    "client_name": "Jane Smith",
+    "client_image": "https://i.ibb.co.com/YQnDSmC/Image-2.png",
+    "customer_status": "First-time buyer",
+    "product_feedback": "I found the product easy to use and reliable. Very happy with my purchase!",
+    "rating": 4.0
+  },
+  {
+    "client_id": 3,
+    "client_name": "Mike Johnson",
+    "client_image": "https://i.ibb.co.com/YjSw5tQ/Image.png",
+    "customer_status": "Returning customer",
+    "product_feedback": "Great features and value for money. Highly recommend!",
+    "rating": 5.0
+  },
+  {
+    "client_id": 4,
+    "client_name": "Sara Lee",
+    "client_image": "https://i.ibb.co.com/cv38fcW/img-4.png",
+    "customer_status": "Occasional buyer",
+    "product_feedback": "Satisfied with the product, but there’s room for improvement.",
+    "rating": 3.8
+  }
+]

@@ -14,7 +14,7 @@ export default function Card({item}) {
   </figure>
   <div className="p-5">
     <h3 className="text-DarkGunmetal text-2xl font-semibold">{product_title}</h3>
-    <p className="text-DarkGunmetal text-xl font-medium text-opacity-[0.6] my-3">Price: {price}</p>
+    <p className="text-DarkGunmetal text-xl font-medium text-opacity-[0.6] my-3">Price: $ {price}</p>
     <div>
         <Link to={`/productDetails/${product_id} `} className="text-Lavender text-lg font-semibold border-[2px] border-Lavender py-2 px-5 rounded-full hover:text-white hover:bg-Lavender">View Details</Link>
     </div>

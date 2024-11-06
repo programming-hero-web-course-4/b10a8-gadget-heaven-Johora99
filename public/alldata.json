@@ -266,6 +266,25 @@
     "brand": "Samsung"
   },
   {
+    "product_id": 16,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/dBfFbx4/unnamed.jpg",
+    "category": "Computers",
+    "price": 999,
+    "description": "Sleek and powerful laptop with an InfinityEdge display.",
+    "specification": [
+      "Intel i7 11th Gen",
+      "16GB RAM",
+      "1TB SSD",
+      "Intel Iris Xe Graphics"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Dell"
+},
+
+
+  {
     "product_id": 18,
     "product_title": "Garmin Venu Sq",
     "product_image": "https://i.ibb.co.com/2YBg6xQ/cf-lg-6cd7a694-4e06-4be4-ba45-33b320058ced.webp",

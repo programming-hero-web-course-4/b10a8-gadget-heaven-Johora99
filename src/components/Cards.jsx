@@ -1,6 +1,7 @@
 import { useLoaderData, useLocation, useParams } from "react-router-dom"
 import Card from "./Card"
 import { useEffect, useState } from "react"
+import img from '../assets/icons8-lost-and-found-96.png'
 
 export default function Cards() {
   const {pathname} = useLocation()
@@ -9,7 +10,6 @@ export default function Cards() {
     const [categories,setCategories] = useState([]);
     useEffect(()=>{
       const findCategoriesItem = [...data].filter(category=> category.category === categoryId);
-      console.log(findCategoriesItem)
       setCategories(findCategoriesItem)
 
     },[data,categoryId])
@@ -21,7 +21,17 @@ export default function Cards() {
        }
     </div>
       )
-    }else{
+    }else if(categories.length === 0){
+      return(
+        <div className="w-full flex flex-col justify-center items-center">
+          <h2 className="text-7xl text-DarkGunmetal font-bold mb-10">No Data Found</h2>
+          <img src={img} alt="" />
+        </div>
+
+      )
+
+    }
+    else{
 
       return (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
