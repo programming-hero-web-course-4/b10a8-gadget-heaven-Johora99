@@ -1,7 +1,7 @@
 import { RxCross2 } from "react-icons/rx";
 
 export default function AddProduct({item}) {
-     const {product_id,product_title,product_image,category,price,description,specification,availability,rating,brand} = item;
+     const {product_title,product_image,price,description} = item;
   return (
     <div className="bg-white flex gap-10 mb-5 rounded-2xl p-5">
         <div>

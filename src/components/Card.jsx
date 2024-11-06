@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Card({item}) {
 
-    const {product_id,product_title,product_image,category,price,description,specification,availability,rating,brand} = item;
+    const {product_id,product_title,product_image,price} = item;
   return (
     <div className="">
         <div className="card w-full bg-white border-[1px] border-Lavender p-5">

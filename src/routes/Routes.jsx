@@ -60,7 +60,7 @@ const router = createBrowserRouter([
     },
     {
       path:"/clientTestimonial",
-      loader:()=>fetch('../../public/clientdata.json'),
+      loader:()=>fetch('/clientdata.json'),
       element:<DiscountProducts></DiscountProducts>
     }
     

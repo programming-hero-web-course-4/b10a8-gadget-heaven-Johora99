@@ -17,8 +17,12 @@ export default function Cards() {
       return (
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
        {
-        data.map((item,index) => <Card key={index} item={item}></Card>)
-       }
+        Array.isArray(data) && data.length > 0 ? (
+          data.map((item, index) => <Card key={index} item={item} />)
+        ) : (
+          <p>No products available</p> 
+        )
+      }
     </div>
       )
     }else if(categories.length === 0){

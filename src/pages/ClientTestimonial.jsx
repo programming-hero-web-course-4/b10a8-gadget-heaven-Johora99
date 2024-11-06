@@ -4,10 +4,15 @@ import 'react-awesome-slider/dist/styles.css';
 import { useLoaderData } from 'react-router-dom';
 
 import Client from '../components/Client';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function ClientTestimonial() {
+  const[clients,setClients] = useState([])
   const data = useLoaderData();
+   useEffect(()=>{
+    setClients(data)
+   },[data])
+  console.log(data)
     useEffect(() => {
     document.title = "Client Testimonial";
   }, []);
@@ -22,12 +27,17 @@ export default function ClientTestimonial() {
       }}
     >
       {
-        data.map(client => (
-          <div key={client.client_id}>
-            <Client client={client} />
-          </div>
-        ))
-      }
+    Array.isArray(data) && clients.length > 0 ? (
+    clients.map(client => (
+      <div>
+        <Client client={client} />
+      </div>
+    ))
+  ) : (
+    <p>No clients available</p> 
+  )
+}
+
     </AwesomeSlider>
   );
 }
